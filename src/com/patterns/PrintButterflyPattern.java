@@ -2,7 +2,7 @@ package com.patterns;
 
 public class PrintButterflyPattern {
     public static void main(String[] args) {
-        int num = 4;
+        int num = 6;
         printButterflyPattern(num);
     }
 
