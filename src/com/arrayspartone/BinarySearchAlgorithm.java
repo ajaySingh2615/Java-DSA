@@ -19,9 +19,9 @@ public class BinarySearchAlgorithm {
                 return mid;
             }
 
-            if(arr[mid] > key){
+            if (arr[mid] > key) {
                 end = mid - 1; // search in left half
-            }else{
+            } else {
                 start = mid + 1; // search in right half
             }
         }
