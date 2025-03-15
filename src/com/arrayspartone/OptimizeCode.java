@@ -1,6 +1,21 @@
 package com.arrayspartone;
 
 public class OptimizeCode {
+    public static void kadanes(int[] numbers){
+        int ms = Integer.MIN_VALUE;
+        int cs = 0;
+
+        for (int number : numbers) {
+            cs = cs + number;
+            if (cs < 0) {
+                cs = 0;
+            }
+            ms = Math.max(cs, ms);
+        }
+
+        System.out.println("Our maximum sum : " + ms);
+    }
+
     public static void printBruteCodeForce(int[] arr) {
         int sum = 0;
         int maximum_sum = Integer.MIN_VALUE;
@@ -47,9 +62,11 @@ public class OptimizeCode {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, -2, 6, -1, 3 };
+//        int[] arr = { 1, -2, 6, -1, 3 };
+        int[] arr = {-2, -3, 4, -1, -2, 1, 5, -3};
 
         // printBruteCodeForce(arr);
-        printMaxSubArraySum(arr);
+//        printMaxSubArraySum(arr);
+        kadanes(arr);
     }
 }
