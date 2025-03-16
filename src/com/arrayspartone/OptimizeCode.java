@@ -12,7 +12,6 @@ public class OptimizeCode {
             }
             ms = Math.max(cs, ms);
         }
-
         System.out.println("Our maximum sum : " + ms);
     }
 
@@ -56,7 +55,6 @@ public class OptimizeCode {
                     maxSum = currSum;
                 }
             }
-
         }
         System.out.println("max sum = " + maxSum);
     }
